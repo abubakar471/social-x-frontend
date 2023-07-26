@@ -28,7 +28,7 @@ const socket = io(process.env.NEXT_PUBLIC_SOCKETIO, {
 })
 
 
-const Home = ({ posts }) => {
+const Home = () => {
   const [people, setPeople] = useState([]);
   const [page, setPage] = useState(2);
   const [state, setState] = useContext(UserContext);
@@ -379,6 +379,5 @@ const Home = ({ posts }) => {
 //   }
 // }
 
-// export default dynamic(() => Promise.resolve(Home), { ssr: false });
+export default dynamic(() => Promise.resolve(Home), { ssr: false });
 
-export default Home
