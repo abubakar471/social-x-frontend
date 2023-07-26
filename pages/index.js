@@ -379,5 +379,6 @@ const Home = ({ posts }) => {
 //   }
 // }
 
-export default dynamic(() => Promise.resolve(Home), { ssr: false });
+// export default dynamic(() => Promise.resolve(Home), { ssr: false });
 
+export default Home
