@@ -71,10 +71,11 @@ const Loading = () => {
 
         router.events.on('routeChangeStart', handleStart);
         // router.events.on('routeChangeComplete', handleComplete);
-        router.events.on('routeChangeComplete', (url) => {
-            console.log(`completely routed to ${url}`);
-            setLoading(false);
-        });
+        // router.events.on('routeChangeComplete', (url) => {
+        //     console.log(`completely routed to ${url}`);
+        //     setLoading(false);
+        // });
+        router.events.on('routeChangeComplete', handleComplete);
         router.events.on('routeChangeError', handleComplete);
 
         return () => {

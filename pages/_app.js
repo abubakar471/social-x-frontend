@@ -6,7 +6,6 @@ export default function App({ Component, pageProps }) {
   return (
     <UserProvider>
       <Layout>
-        {/* <Loading /> */}
         <Component {...pageProps} />
       </Layout>
     </UserProvider>
