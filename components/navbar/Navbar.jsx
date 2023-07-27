@@ -185,7 +185,7 @@ function Navbar() {
 
     return (
         <div className={styles.navbar_container}>
-            <Loading />
+            {/* <Loading /> */}
             <div className={styles.navbar}>
                 <div className={styles.logo_container}>
                     <IconButton>
