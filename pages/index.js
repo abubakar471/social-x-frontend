@@ -288,13 +288,13 @@ const Home = () => {
   }
 
 
-  // process.browser && setTimeout(() => {
-  //   if (posts.length < 0) helperFetch();
-  // }, 1000);
-
-  useEffect(() => {
+  process.browser && setTimeout(() => {
     helperFetch();
-  }, []);
+  }, 1000);
+
+  // useEffect(() => {
+  //   helperFetch();
+  // }, []);
 
 
 
