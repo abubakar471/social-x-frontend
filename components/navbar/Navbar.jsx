@@ -179,19 +179,13 @@ function Navbar() {
         }
     }
 
-    // useEffect(() => {
-    //     if (state && state.token) {
-    //         if (state.user.role === "Admin") {
-    //             settings = settings.splice(2, 0, 'Admin');
-    //         } 
-    //     } 
-    // }, [state && state.token]);
 
 
 
 
     return (
         <div className={styles.navbar_container}>
+            <Loading />
             <div className={styles.navbar}>
                 <div className={styles.logo_container}>
                     <IconButton>
@@ -326,7 +320,7 @@ function Navbar() {
                     </div>)}
                 </div>
             </div>
-            <Loading />
+            
         </div>
     );
 };
